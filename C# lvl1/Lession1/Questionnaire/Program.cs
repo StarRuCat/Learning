@@ -36,11 +36,11 @@ namespace Lession1
             if(user_answer == "4")
             {
                 Clear();
-                replasment();
+                Replasment();
             }
             if(user_answer == "5")
             {
-                author();
+                Author();
             }
         }
 
@@ -94,7 +94,7 @@ namespace Lession1
             ReadKey();
         }
 
-        static void replasment()
+        static void Replasment()
         {
             WriteLine("Введите значение для первой перменной: ");
             int a = Int32.Parse(ReadLine());
@@ -107,7 +107,7 @@ namespace Lession1
             ReadKey();
         }
 
-        static void author()
+        static void Author()
         {
             WriteLine("                                             " + "Федор Томилов, Москва");
             ReadKey();
