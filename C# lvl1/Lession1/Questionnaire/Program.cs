@@ -18,29 +18,28 @@ namespace Lession1
             WriteLine("4.Обмен значений двух переменных");
             WriteLine("5.Авторство");
             string user_answer = ReadLine();
-            if(user_answer == "1")
+            switch (user_answer)
             {
-                Clear();
-                Questionnaire();
-            }
-            if(user_answer == "2")
-            {
-                Clear();
-                BMI();
-            }
-            if(user_answer == "3")
-            {
-                Clear();
-                DBP();
-            }
-            if(user_answer == "4")
-            {
-                Clear();
-                Replasment();
-            }
-            if(user_answer == "5")
-            {
-                Author();
+                case "1":
+                    Clear();
+                    Questionnaire();
+                    break;
+                case "2":
+                    Clear();
+                    BMI();
+                    break;
+                case "3":
+                    Clear();
+                    DBP();
+                    break;
+                case "4":
+                    Clear();
+                    Replasment();
+                    break;
+                case "5":
+                    Author();
+                    break;
+                default: break;
             }
         }
 
